@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+   .signInBox{
+     position:absolute; 
+    display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20em;
+  width: 700px;
+  height: 700px;
+     background-image: url(/src/imagenes/images.png); 
+    background-blend-mode: saturation;
+    background-size: 100% 100%;
+    
+  }
+  
+  .signInBox:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+  }
+  
+ 
+  
+  
+  
+  .labelText{
+    color: rgb(207, 103, 6);
+    font-family: 'Cafe Francoise';
+    font-weight: 800;
+    
+  } 
+   .form {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    margin-left: 22em;
+    text-align: center; 
+    border-radius: 20em;
+    position: absolute;
+    background-size: 100% 100%; 
+    
+  }
+
+  .form:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+  }
+  
+  
+  .input{
+    width: 50%;
+    height: 1.5em;
+    /* color: #10b7323d; */
+    padding-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center; 
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px; 
+     margin-left: 7em;
+     
+  } 
+  
+  
+  .textoH1{
+    font-family:'Cafe Francoise';
+  /* align-self: center; */
+  font-size: 3em;
+  color: #072f2a;
+  
+  /* margin: auto; */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+  }
+  
+  
+  .btnLog{
+    font-family: 'IBM Plex Mono';
+    font-weight: 800;
+    background-color: #d834b8;
+    width: 80px;
+    border-radius:.4em;
+    box-shadow: 0 3px 3px 0 #10b7323d, 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-left: 20em;
+    padding:.5em;
+  }
+  
+  .btnLog:hover {
+    background-color: #000000;
+    color: #ffd700;
+  }
+    

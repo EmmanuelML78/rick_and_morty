@@ -1,0 +1,82 @@
+.detailBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    border: solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(173, 216, 156, 0.582);
+    width: 800px;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 12px;
+    box-shadow: 2px 2px 20px 2px #ffe601;
+    border-radius: 3em;
+   
+  }
+  
+  .detailImgBox{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4em;
+    margin-top: 4em;
+    /* width: 350px; */
+    /* border:white solid 15px; */
+    /* background-color: white; */
+  }
+  
+  .detailImg{
+    width:100%;
+  }
+  
+  .detailCharacterName{
+    font-family: 'Cafe Francoise';
+    font-size: 1.5em;
+    margin: 0px;
+    color: rgb(16, 16, 16);
+  }
+  
+  
+  
+  .detailCharacterName:hover
+  {
+    cursor: cell;
+  transform: scale(1.1);
+   transition: transform  1s;
+  }
+  
+  
+  .infoTitle{
+    font-family: 'Cafe Francoise';
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 6px rgba(72, 218, 15, 0.7);
+  }
+  
+  .detailTxt{
+    font-weight: 600;
+    padding: .5em;
+    background-color: rgb(55, 214, 19);
+    border-radius: 0.8em;
+    margin-bottom: 2em ;
+  }
+
+
+  .btnNav {
+    background-color: #ffd700;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    /* display: inline-block; */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .btnNav:hover {
+    background-color: #000000;
+    color: #ffd700;
+  }
