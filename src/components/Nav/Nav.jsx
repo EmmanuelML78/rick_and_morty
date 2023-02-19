@@ -13,6 +13,9 @@ const Nav = ({ onSearch }) => {
       <Link to='/home'>
         <button className={na.btnCartoon}>Home</button>
       </Link>
+      <Link to='/favorites'>
+        <button className={na.btnCartoon}>Favorites</button>
+      </Link>
       <Link to='/about'>
         <button className={na.btnCartoon}>About</button>
       </Link>

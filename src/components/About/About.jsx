@@ -5,15 +5,13 @@ import abou from "./about.module.css";
 const About = () => {
     return (
     <>
-        <Link to={`/home`} >
-            <button className={abou.btnNa}>Return</button>
-        </Link>
+        
         <div className='about'>
           <div>
           <div>
             <img className={abou.imgEmma}
                             src={require('../../imagenes/emma.jpeg')}
-                            alt='Cindy Posada'
+                            alt='Emmanuel'
                 ></img>
             <div className={abou.aboutInfotxt}>
               <p><b>Hi! My name is Emmanuel!</b> Soy el creador de esta página, aquí puedes encontrar los personajes de Rick & Mortys, puedes buscarlos por su ID, ¡también puedes consultar información adicional si haces clic en los nombres de los personajes!</p>
@@ -44,7 +42,9 @@ const About = () => {
           </div>
         </div>
         </div>  
-    
+        <Link to={`/home`} >
+            <button className={abou.btnNa}>Return</button>
+        </Link>
     </>
       )
   }

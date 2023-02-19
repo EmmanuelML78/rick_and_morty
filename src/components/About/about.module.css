@@ -5,9 +5,7 @@
   margin-top: 2em;
 }
 
-.txtCindy{
-  margin: 0px;
-}
+
 
 .imgEmma{
   width:25em;
@@ -18,7 +16,7 @@
 
 
 .aboutTitle{
-  color: rgb(255, 4, 4);
+  color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2vw;
   font-weight: bold;

@@ -6,6 +6,8 @@ import Detail from '../src/components/Detail/Detail'
 import Form from '../src/components/Form/Form'
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
+import Favorites from '../src/components/Favorites/Favorites';
+
 
 
 function App () {
@@ -60,6 +62,7 @@ function App () {
         <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/detail/:detailId' element={<Detail/>}/>
+        <Route path='/favorites' element={<Favorites/>}/>
       </Routes>
     </div>
   )

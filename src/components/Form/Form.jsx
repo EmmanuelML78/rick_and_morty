@@ -32,7 +32,7 @@ const Form = ({login}) =>{
     }
 
     return(
-        <div >
+        <div className={styles.container}>
            
             
             <form className={styles.form}onSubmit={handleSubmit}>
