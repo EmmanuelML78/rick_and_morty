@@ -1,0 +1,76 @@
+.about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+
+
+.imgEmma{
+  width:18em;
+  height: 18em;
+  border-radius: 20em;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+
+.aboutTitle{
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+
+.aboutInfo{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ margin-left: 6%;
+ font-size: 14px;
+}
+.aboutInfotxt{
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: .5em;
+  padding: .7em;
+  width: 40em;
+  margin-left: 25%;
+  margin-top: 12px;
+}
+
+.aboutTxt{
+  font-weight: 600;
+  padding: .1em;
+  
+  background-color: rgb(245, 238, 166);
+  border-radius: .5em;
+  margin-bottom: 2em ;
+}
+
+.txtBox{
+  margin-right: 3em;
+}
+
+
+.btnNa {
+  background-color: #ffd700;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  color: #000000;
+  /* display: inline-block; */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 12px;
+  
+}
+.btnNa:hover {
+  background-color: #000000;
+  color: #ffd700;
+}
