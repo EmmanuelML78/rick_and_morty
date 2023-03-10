@@ -28,7 +28,7 @@ const router = require('./routes/index');
 const favsRouter = require('./routes/favsRouter')
 
 server.use(express.json());
-server.use(cors())
+server.use(cors());
 server.use(morgan("dev"));
 server.use('/rickandmorty', router);
 server.use('/favs', favsRouter);

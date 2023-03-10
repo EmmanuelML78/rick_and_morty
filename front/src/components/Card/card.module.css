@@ -79,11 +79,12 @@
   }
 
   .container {
-    display: flex;
+    /* display: flex; */
    justify-content:space-evenly;
    flex-direction:row ;
    flex-wrap: wrap;
-   margin-top: 12px;
+   
+   /* margin-top: 12px; */
    /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: auto;

@@ -9,7 +9,7 @@ const Detail = () => {
     const [character, setCharacter] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:3001/rickandmorty/detail/${id}`)
+        fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
           .then((response) => response.json())
           .then((char) => {
             if (char.name) {
@@ -25,8 +25,9 @@ const Detail = () => {
       }, [detailId]);
 
     return(
-      <>
+      
         <div className={detal.detailBox}>
+          
           <div className={detal.detailImgBox}>
             <img src={character?.image} alt={character?.name} />
             <h1 className={detal.detailCharacterName}>{character?.name}</h1>
@@ -55,11 +56,8 @@ const Detail = () => {
           <Link to="/home">
             <button className={detal.btnNav}>Volver</button>
         </Link>
-         </div> 
-       
-        </div>
-        
-       </>  
+        </div> 
+        </div>    
     )
 }
 

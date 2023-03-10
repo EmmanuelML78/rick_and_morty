@@ -4,7 +4,8 @@ let { favs } = require('../utils/favs')
 const favsRouter = Router();
 
 favsRouter.post("/create", (req, res) => {
-    favs.push({...req.body})
+    const add = req.body
+    favs.push(add)
     res.status(201).json(favs);
 })
 
@@ -14,7 +15,7 @@ favsRouter.get("/get", (req,res) => {
 
 favsRouter.delete("/delete/:id", (req,res) => {
     const {id} = req.params
-    favs = favs.filter(pj => pj.id !== Number(id));
+    favs = favs.filter((pj) => pj.id !== Number(id));
     return res.status(200).json(favs);
 });
 

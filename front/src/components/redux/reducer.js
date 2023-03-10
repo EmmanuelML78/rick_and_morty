@@ -12,8 +12,8 @@ const initialState = {
 }
 
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
+const reducer = (state = initialState, {type, payload}) => {
+    switch (type) {
         case ADD_FAVORITES:
             return {...state,
                 myFavorites: payload,
@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
                 errors: {}
             }
         case FILTER:
-            const allCharsFiltered = state.allCharacters.filter(char => char.gender === action.payload);
+            const allCharsFiltered = state.allCharacters.filter((char) => char.gender === payload);
             return {...state,
                 myFavorites: allCharsFiltered
             } 

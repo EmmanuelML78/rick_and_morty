@@ -1,30 +1,30 @@
-import { ADD_FAVORITES, DELETE_FAVORITE, FILTER, ORDER } from "./reducer"
-import axios from "axios"
+import { ADD_FAVORITES, DELETE_FAVORITE, FILTER, ORDER } from "./reducer";
+import axios from "axios";
 
 export const addFavorite = (character) => {
     return async function(dispatch){
 
         try {
-            const respuestaDelBack = await axios.post("http://localhost:3001/favs/create", character)
+            const respuestaDelBack = await axios.post("http://localhost:3001/favs/create", character);
         return dispatch({
-            type: ADD_FAVORITES, payload: respuestaDelBack.data
-        })
+            type: ADD_FAVORITES, payload: respuestaDelBack.data,
+        });
         } catch (error) {
-            return dispatch({type: "ERROR", payload: error})
+            return dispatch({type: "ERROR", payload: error});
         }
        
 
         // axios.post("http://localhost:3001/favs/create", character).then(response => {
         //     return dispatch({ type: ADD_FAVORITES, payload: response.data });
         // })
-    }
+    };
 };
 
 export const deleteFavorite = (id) => {
     return async function(dispatch){
 
         try {
-            const response = await axios.delete("http://localhost:3001/favs/delete"+id)
+            const response = await axios.delete("http://localhost:3001/favs/delete/"+id)
             return dispatch({ type: DELETE_FAVORITE, payload: response.data });
         } catch (error) {
             return dispatch({ type: "ERROR", payload: error })
@@ -41,9 +41,9 @@ export const getFavorites = () => {
     return async function(dispatch){
         try {
             const response = await axios("http://localhost:3001/favs/get")
-            return dispatch({type: "GET_FAVS", payload: response.data })
+            return dispatch({type: "GET_FAVS", payload: response.data, });
         } catch (error) {
-            return dispatch({ type: "ERROR", payload: error })
+            return dispatch({ type: "ERROR", payload: error });
         }
     }
 } 
