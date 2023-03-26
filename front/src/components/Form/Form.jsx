@@ -46,7 +46,7 @@ const Form = ({login}) =>{
                 
                 <button className={styles.btnLog} type="submit">LOGIN</button>
                 <Link to={`/home`} >
-                <button className={styles.btnLog}>Continue as a guest</button>
+                <button className={styles.btnLog2}>Continue as a guest</button>
                 </Link>
                 {errors.username && <p style={{color: 'white'}}>{errors.username}</p>}
                 {errors.password && <p style={{color: 'white'}}>{errors.password}</p>}

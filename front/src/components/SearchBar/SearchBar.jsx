@@ -15,7 +15,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className="searh.lo">
-      <input className={search.inp} type="search" value={character} onChange={handleChange} />
+      <input className={search.inp} placeholder="Escribe un ID" type="search" value={character} onChange={handleChange} />
       <button className={search.btnCartoon}  onClick={handleAdd}>Agregar</button>
     </div>
   );

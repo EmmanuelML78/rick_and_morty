@@ -102,4 +102,21 @@
     background-color: #000000;
     color: #ffd700;
   }
-    
+
+  .btnLog2{
+    font-family: 'IBM Plex Mono';
+    font-weight: 800;
+    background-color: #6ed31b;
+    width: 80px;
+    height: 100;
+    border-radius:.4em;
+    box-shadow: 0 3px 3px 0 #10b7323d, 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-left: 1em;
+    margin-top: 1rem;
+    padding:.5em;
+  }
+  
+  .btnLog2:hover {
+    background-color: #000000;
+    color: #d834b8;
+  }
