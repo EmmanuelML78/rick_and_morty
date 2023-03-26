@@ -1,6 +1,7 @@
 import {useState} from "react";
 import validation from "./validation";
 import styles from "../Form/form.module.css";
+import { Link } from 'react-router-dom'
 
 
 const Form = ({login}) =>{
@@ -44,6 +45,9 @@ const Form = ({login}) =>{
                 <input className={styles.input} type="password" name="password" value={userData.password} onChange={handleInputChange}/>
                 
                 <button className={styles.btnLog} type="submit">LOGIN</button>
+                <Link to={`/home`} >
+                <button className={styles.btnLog}>Continue as a guest</button>
+                </Link>
                 {errors.username && <p style={{color: 'white'}}>{errors.username}</p>}
                 {errors.password && <p style={{color: 'white'}}>{errors.password}</p>}
             </form>

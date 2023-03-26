@@ -9,17 +9,17 @@ const Favorites = () => {
     const { myFavorites } = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const handlerOrder = (event) => {
-        dispatch(orderCards(event.target.value))
-    }
+    // const handlerOrder = (event) => {
+    //     dispatch(orderCards(event.target.value))
+    // }
 
-    const handlerFilter = (event) => {
-        dispatch(filterCards(event.target.value))
-    }
+    // const handlerFilter = (event) => {
+    //     dispatch(filterCards(event.target.value))
+    // }
 
     return (
         <div>
-            <div>
+            {/* <div>
                 <select onChange={handlerOrder}>
                     <option value="order" disabled='disable'>Order By</option>
                     <option value="Ascendente">Ascendente</option>
@@ -32,7 +32,7 @@ const Favorites = () => {
                     <option value="unknown">unknown</option>
                     <option value="Genderless">Genderless</option>
                 </select>
-            </div>
+            </div> */}
             {
                 myFavorites.map((character) =>{
                     return(

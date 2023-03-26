@@ -16,7 +16,7 @@ function Card({ name, gender, onClose, species, image, id }) {
     }
     else {
       setIsFav(true);
-      dispatch(addFavorite({ name, gender, onClose, species, image, id }));
+      dispatch(addFavorite({ name, gender, onClose, species, image, id }))
     }
   };
   
@@ -26,7 +26,7 @@ function Card({ name, gender, onClose, species, image, id }) {
           setIsFav(true);
        }
     });
- }, [myFavorites]);
+ }, [myFavorites, id]);
 
   return (
     <div className={Cstyle.divCard}>

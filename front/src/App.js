@@ -25,6 +25,10 @@ function App () {
       navigate('/home');
     }
   };
+  const skip = () => {
+    setAccess(true)
+    navigate('/home')
+  }
 
   useEffect(() => {
     !access && navigate('/');
@@ -32,7 +36,7 @@ function App () {
   
 
   const onSearch = (character) => {
-    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
+    fetch(`https://rickandmortyapi.com/api/character/${character}`)
        .then((response) => response.json())
        .then((data) => {
           if (data.name) {
